@@ -13,7 +13,7 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 
 @Profile("h2")
-@Configuration
+//@Configuration
 public class H2DataSource {
 
 	// jdbc:h2:mem:testdb

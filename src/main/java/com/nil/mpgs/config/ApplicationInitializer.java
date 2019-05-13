@@ -10,11 +10,10 @@ import org.springframework.web.servlet.DispatcherServlet;
 
 public class ApplicationInitializer implements WebApplicationInitializer{
 
-	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
 		AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
 		
-		ctx.register(BeanConfig.class);
+		ctx.register(BeanConfig.class,AppConfig.class);
 		ctx.setServletContext(servletContext);
 		ServletRegistration.Dynamic servlet = servletContext.addServlet("dispatcher", new DispatcherServlet(ctx));
 		servlet.setLoadOnStartup(1);

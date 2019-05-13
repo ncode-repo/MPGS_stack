@@ -24,7 +24,7 @@
 	border-radius: 50%;
 }
 </style>
-<body ng-app="GoogleOAuthDemoApp" ng-controller="AppCtrl" ng-cloak>
+<body >
 	<div class="container" style="margin-top: 50px;">
 		<!-- Login panel -->
 		<div class=" col-md-4 col-md-offset-4">
@@ -63,6 +63,6 @@
 	<!-- Including Scripts -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-	<script type="text/javascript" src="js/app/app.js"></script>
+	<script type="text/javascript" src="ui/js/app/app.js"></script>
 </body>
 </html>
